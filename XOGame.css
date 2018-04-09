@@ -1,0 +1,146 @@
+		body {
+			font-family: lato;
+			background: url("imgs/background.jpg");
+		}
+		.squared h1 {
+			color: orange;
+			text-align: center;
+			padding: 20px;
+			margin-top: 20px;
+			animation: animateHeader;
+			animation-duration: 2s;
+			display: none;
+		}
+		@keyframes animateHeader {
+		    0%   {transform: scale(1);}
+		    25%  {transform: scale(1.5);}
+		    45%  {transform: scale(1);}
+		    70% {transform: scale(1.5);}
+		    100% {transform: scale(1)}
+		}
+		.game-name {
+			color: green;
+		}
+		.container {
+			display: inline-block;
+			transform: translate(23%,30%);
+			background: #f7e5e5;
+			padding: 20px;
+			min-width: 850px;
+			margin-top: -50px;
+		}
+		.header h1 {
+			text-align: center;
+			margin-top: 0;
+		}
+		.player1 , .player2 {
+			padding: 20px;
+			transition: .5s;
+			min-width: 140px;
+		}
+		
+		.player1 {
+			float: left;
+			margin-right: 30px;
+		}
+		.player2 {
+			float: left;
+			margin-left: 170px;
+		}
+		.player2 img {
+			background: #fff;
+			padding: 5px;
+		}
+		.player1 img , .player2 img {
+			border-radius: 3px;
+		}
+		.game {
+			width: 250px;
+			height: 250px;
+			border: 1px solid black;
+			float: left;
+			margin: 30px 0 0 100px;
+		}
+		.game .above-row {
+			height: 33%;
+			border-bottom: 1px solid black;
+		}
+		.game .center-row {
+			height: 33%;
+			border-bottom: 1px solid black;
+		}
+		.game .bottom-row {
+			height: 33%;
+			border-bottom: 1px solid black;
+		}
+		.game .above-row div {
+			width: 33%;
+			height: 100%;
+			float: left;
+		}
+		.game .above-row .above-center-e {
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+		}
+
+		.game .center-row div {
+			width: 33%;
+			height: 100%;
+			float: left;
+		}
+		.game .center-row .center-center-e {
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+		}
+
+		.game .bottom-row div {
+			width: 33%;
+			height: 100%;
+			float: left;
+		}
+		.game .bottom-row .bottom-center-e {
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+		}
+		.game div div {
+			transition: .5s;
+		}
+		.game div div:hover {
+			cursor: pointer;
+			background: gray;
+		}
+		.clear {
+			clear: both;
+		}
+
+		.controls .btn {
+			background: #5d1010;
+			color: #DDD;
+			padding: 10px;
+			margin: 30px 0 0 44%;
+			text-decoration: none;
+			display: inline-block;
+			border: 1px solid #5d1010;
+			border-radius: 2px;
+			transition: .5s;
+			cursor: pointer;
+		}
+		.game img {
+			width: 82.5;
+			height: 82.5;
+		}
+		.restart {
+			margin-top: 20px;
+			background: #8a1515;
+			border-color: #8a1515;
+			line-height: 25px;
+			border-radius: 2px;
+			cursor: pointer;
+			padding: 10px;
+			text-decoration: none;
+			color: #FFF;
+		}
+		.restart:hover {
+			background: #a20b0b;
+			border-color: #a20b0b;
+		}

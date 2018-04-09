@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toc</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
+	<link href="XOGame.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div class="squared">
+		<h1>Squared</h1>
+	</div>
+	<div class="container">
+		<div class="header">
+			<h1>Welcome To <span class="game-name">Tic Tac Toc</span> Game </h1>
+		</div>
+		<div class="player1">
+			<h3>Player One</h3>
+			<img width="50" height="50" src="imgs/x.jpg" alt="">
+			<h3 id="1" style="display: none">Player One Won</h3>
+		</div>
+		<div class="game">
+
+			<div class="above-row">
+				<div class="left-e above-left-e"></div>
+				<div class="above-center-e"> </div>
+				<div class="right-e above-right-e">  </div>
+			</div>
+
+			<div class="center-row">
+				<div class="left-e center-left-e"> </div>
+				<div class="center-center-e"> </div>
+				<div class="right-e center-right-e"> </div>
+			</div>
+
+			<div class="bottom-row">
+				<div class="left-e bottom-left-e"> </div>
+				<div class="bottom-center-e"> </div>
+				<div class="right-e bottom-right-e"> </div>
+			</div>
+
+		</div>
+		<div class="player2">
+			<h3>Player Two</h3>
+			<img width="50" height="50" src="imgs/o.png" alt="">
+			<h3 id="2" style="display: none">Player Two Won</h3>
+		</div>
+
+		<div class="clear"></div>
+		<a href="" class="restart">Restart Game</a>
+	</div>
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="XOGame.js"></script>
+</body>
+</html>
